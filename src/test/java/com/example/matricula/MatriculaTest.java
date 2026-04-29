@@ -19,8 +19,8 @@ public class MatriculaTest {
     @Test
     void calcularCostoMatriculaEstandar() {
         // Arrange
-        Estudiante est = new Estudiante("Ana", "Lopez", "A001", "ana@example.com", "Ingenieria");
-        Curso curso = new Curso("Matemáticas", "MATE101", 3, 100.0);
+        Estudiante est = new Estudiante("Diego", "Soto", "D010", "diego@example.com", "Sistemas");
+        Curso curso = new Curso("Cálculo", "CALC101", 3, 100.0);
         PeriodoAcademico periodo = new PeriodoAcademico("2026-1", LocalDate.now(), LocalDate.now().plusMonths(4));
         when(servicio.esValido(any(), any(), any())).thenReturn(true);
 
@@ -42,8 +42,8 @@ public class MatriculaTest {
     @Test
     void descuentoPorCreditosMayoresOIgual5() {
         // Arrange
-        Estudiante est = new Estudiante("Luis", "Garcia", "L002", "luis@example.com", "Arquitectura");
-        Curso curso = new Curso("Proyecto Avanzado", "PROJ500", 5, 200.0);
+        Estudiante est = new Estudiante("Valeria", "Torres", "V021", "valeria@example.com", "Civil");
+        Curso curso = new Curso("Ingeniería de Software", "IS500", 5, 200.0);
         PeriodoAcademico periodo = new PeriodoAcademico("2026-1", LocalDate.now(), LocalDate.now().plusMonths(4));
         when(servicio.esValido(any(), any(), any())).thenReturn(true);
 
@@ -62,8 +62,8 @@ public class MatriculaTest {
     @Test
     void retiroDentroDe7DiasDevuelve70porciento() {
         // Arrange
-        Estudiante est = new Estudiante("Carlos", "Perez", "C003", "carlos@example.com", "Derecho");
-        Curso curso = new Curso("Introducción al Derecho", "DER100", 4, 150.0);
+        Estudiante est = new Estudiante("Martin", "Lopez", "M033", "martin@example.com", "Derecho");
+        Curso curso = new Curso("Historia del Derecho", "HD100", 4, 150.0);
         PeriodoAcademico periodo = new PeriodoAcademico("2026-1", LocalDate.now(), LocalDate.now().plusMonths(4));
         when(servicio.esValido(any(), any(), any())).thenReturn(true);
 
@@ -85,8 +85,8 @@ public class MatriculaTest {
     @Test
     void pruebaIntegralMatricula() {
         // Arrange
-        Estudiante est = new Estudiante("María", "Rodriguez", "M004", "maria@example.com", "Medicina");
-        Curso curso = new Curso("Anatomía", "ANAT200", 3, 120.0);
+        Estudiante est = new Estudiante("Lucia", "Ramirez", "L044", "lucia@example.com", "Odontologia");
+        Curso curso = new Curso("Fisiología", "FIS200", 3, 120.0);
         PeriodoAcademico periodo = new PeriodoAcademico("2026-1", LocalDate.now(), LocalDate.now().plusMonths(4));
         when(servicio.esValido(any(), any(), any())).thenReturn(true);
 
