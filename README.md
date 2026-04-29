@@ -29,19 +29,7 @@ Uso de frameworks y patrones
  - Mockito para simular `ServicioValidacion`.
  - Las pruebas siguen el patrón AAA (Arrange, Act, Assert).
 
-Archivos de evidencia generados
- - Reportes de Surefire en `target/surefire-reports/` (texto y XML).
- - Registro de salida de las pruebas en `target/surefire-reports/com.example.matricula.MatriculaTest.txt`.
-
-Autor / Identificación del entregable
+Autor 
  - Nombre: Andreow Santiago Peña
  - Código: u202317362
 
-Estado de cumplimiento (verificado en este repositorio)
- - C01 (Building y ejecución): ✅ `mvn test` pasa y genera reportes.
- - C02 (Unit test): ✅ 3 pruebas unitarias implementadas + 1 integral.
- - C03 (Patrón AAA): ✅ Evidente en todos los tests.
- - C04 (Mocking framework): ✅ Mockito usado correctamente.
- - C05 (Evidences): ⚠️ Reportes técnicos presentes; falta adjuntar capturas con fecha/hora en el Word de entrega para cumplir requisito manual del examen.
-
-¿Quieres que genere un ZIP listo para entregar con reportes y un checklist adicional? Responde y lo preparo.
